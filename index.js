@@ -1,5 +1,6 @@
 function updateTime() {
-    const currentTimeUTC = new Date().toISOString().split('T')[1].slice(0, 8);
+    const now = new Date();
+    const currentTimeUTC = now.toISOString().split('T')[1].slice(0, 8);
     document.querySelector('[data-testid="currentTimeUTC"]').innerText = currentTimeUTC;
 }
 
@@ -12,5 +13,5 @@ function updateDay() {
 document.addEventListener('DOMContentLoaded', () => {
     updateTime();
     updateDay();
-    setInterval(updateTime, 60000);  
+    setInterval(updateTime, 1000);  
 });

@@ -7,31 +7,38 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: #5F9EA0;
 }
 .container {
     width: 90%;
     max-width: 376px;
     margin: 10px;
     padding: 10px 10px 10px 10px;
-    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
 }
 header {
     text-align: center;
-    font-size: 1rem;
+    
 }
-.profile, .goals, .links {
+h1{
+    color: blue;
+    font-size: 2rem;
+}
+.profile, .goals {
     margin: 10px 10px;
    
 }
 h2 {
-    color: #333;
+    color: blue;
     font-size: 2rem;
 }
 p{
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
-    color: blueviolet;
+    color: #13274F;
     
 }
 .goals{
@@ -51,26 +58,35 @@ ol {
 img {
     display: block;
     margin: 10px auto;
-    max-width: 100%;
-    height: auto;
 }
+.links h2{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
 ul > li{
-   
-    font-size: 1.5rem;
-    line-height: 2rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
 }
 a{
-    color: black;
+    color: #007FFF;
+    text-decoration: none;
 }
 @media (min-width: 768px){
     header {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .container {
         width: 90%;
         max-width: 800px;
-        margin: 10px;
+        margin: 20px;
         padding: 20px;
        
     }
@@ -84,6 +100,10 @@ a{
     .profile, .goals, .links {
         margin: 20px 20px;
        
+    }
+    ul > li{
+        font-size: 1.5rem;
+        font-weight: 500;
     }
     
 }
